@@ -7,6 +7,15 @@ packages:
   gitUrl: https://github.com/Kritika-Shaw
   gitUsername: Kritika-Shaw
   gitBranch: main
+services:
+- serviceName: project.git_custom.integrations:addINTS_pv_CDT
+  packages:
+  - name: Git_customProject
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1121
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
